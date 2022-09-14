@@ -60,6 +60,8 @@ while True:
         x1, x2 = x_offset, x_offset + moustache.shape[1]
         alpha_s = moustache[:, :, 3] / 255.0
         alpha_l = 1.0 - alpha_s
+        
+        y1, y2, x1, x2 = int(y1), int(y2), int(x1), int(x2)
    
         for c in range(3):
            
